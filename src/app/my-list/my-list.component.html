@@ -1,0 +1,8 @@
+
+<div class="row my-bonsai-list">
+  <ng-template ngFor let-item [ngForOf]="myBonsais">
+    <div class="col-100 tablet-33">
+      <app-bonsai-list-item [myBonsai]="item"></app-bonsai-list-item>
+    </div>
+  </ng-template>
+</div>

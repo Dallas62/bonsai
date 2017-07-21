@@ -1,0 +1,51 @@
+<div class="content-block-title content-block-detail">{{ (myBonsai) ? myBonsai.name : bonsai.name }}</div>
+
+<div class="card card-detail">
+  <div class="card-header color-white no-border">
+    <img src="/assets/img/bonsais/{{ bonsai._id }}.jpg"/>
+  </div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      <p>{{ bonsai.description }}</p>
+      <div class="row bonsai-properties">
+        <div class="col-60 tablet-20">
+          Humidité:
+        </div>
+        <div class="col-40 tablet-auto">
+          <ng-template ngFor [ngForOf]="humidity">
+            <i class="fa fa-tint" aria-hidden="true"></i>
+          </ng-template>
+        </div>
+        <div class="col-60 tablet-20">
+          Ensoleillement :
+        </div>
+        <div class="col-40 tablet-auto">
+          <ng-template ngFor [ngForOf]="sun">
+            <i class="fa fa-sun-o" aria-hidden="true"></i>
+          </ng-template>
+        </div>
+        <div class="col-60 tablet-20">
+          Résistance au froid :
+        </div>
+        <div class="col-40 tablet-auto">
+          <ng-template ngFor [ngForOf]="temperature">
+            <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+          </ng-template>
+        </div>
+      </div>
+
+      <ng-template ngIf [ngIf]="myBonsai != null" >
+         <app-my-bonsai-form [name]="myBonsai.name" (onRename)="onRename($event)"></app-my-bonsai-form>
+      </ng-template>
+    </div>
+  </div>
+  <div class="card-footer">
+    <a class="link">Partager</a>
+    <ng-template ngIf [ngIf]="myBonsai != null" >
+      <a class="link" (click)="onRemoveToList(myBonsai)">Retirer dans ma liste!</a>
+    </ng-template>
+    <ng-template ngIf [ngIf]="myBonsai == null" >
+      <a class="link" (click)="onAddToList(bonsai)">Mettre dans ma liste!</a>
+    </ng-template>
+  </div>
+</div>

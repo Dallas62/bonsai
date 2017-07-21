@@ -1,0 +1,21 @@
+
+<form class="list-block">
+  <div class="content-block-title">Configurer</div>
+
+  <ul>
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">Nom</div>
+          <div class="item-input">
+            <input type="text" name="name" [(ngModel)]="name" placeholder="Nom de votre Bonsai">
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <div class="content-block">
+    <a class="button button-fill button-big" (click)="rename()">Renommer!</a>
+  </div>
+</form>

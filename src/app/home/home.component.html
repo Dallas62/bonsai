@@ -1,0 +1,31 @@
+<div class="content-block-title content-block-home">Bienvenue!</div>
+<div class="card">
+  <div class="card-content">
+    <div class="card-content-inner text-center">
+      <div>
+        L'application qui vous aide à prendre soin de vos bonsais, ...
+      </div>
+      <div>
+        <img class="home-img" src="/assets/img/bonsai.png">
+      </div>
+      <div>
+        <a routerLink="/bonsais" class="button button-big button-fill button-raised button-home">Découvrir les
+          bonsais</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row media-home">
+  <div class="col-100 tablet-33">
+    <app-bonsai-card-list [title]="'Nouveautés:'" [bonsais]="latestBonsais"></app-bonsai-card-list>
+  </div>
+
+  <div class="col-100 tablet-33">
+    <app-bonsai-card-list [title]="'Vos derniers Bonsais:'" [myBonsais]="myLatestBonsais"></app-bonsai-card-list>
+  </div>
+
+  <div class="col-100 tablet-33">
+    <app-bonsai-card-list [title]="'Connaissez-vous:'" [bonsais]="randomBonsais"></app-bonsai-card-list>
+  </div>
+</div>

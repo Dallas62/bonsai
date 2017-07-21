@@ -1,0 +1,25 @@
+
+<div class="card">
+  <div class="card-header">{{ title }}</div>
+
+  <div class="card-content">
+    <div class="list-block media-list">
+      <ng-template ngFor let-item [ngForOf]="bonsais">
+        <app-bonsai-card-list-item  [bonsai]="item"></app-bonsai-card-list-item>
+      </ng-template>
+      <ng-template ngFor let-item [ngForOf]="myBonsais">
+        <app-bonsai-card-list-item  [myBonsai]="item"></app-bonsai-card-list-item>
+      </ng-template>
+
+      <ng-template ngIf [ngIf]="!bonsais.length && !myBonsais.length">
+        <a  class="item-content">
+          <div class="item-inner">
+            <div class="item-title-row">
+              <div class="item-title">Cette liste est vide.</div>
+            </div>
+          </div>
+        </a>
+      </ng-template>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+.content-block-home {
+  text-align: center;
+  font-size: 200%;
+  line-height: 120%;
+}
+
+.home-img {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 380px;
+}
+
+.button-home {
+  margin: 0 auto;
+  max-width: 360px;
+}
+
+.media-home {
+  margin-bottom: 64px;
+}
+
+.text-center {
+  text-align: center;
+}

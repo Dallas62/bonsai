@@ -1,0 +1,44 @@
+
+.bonsai-list-item {
+  text-align: center;
+}
+
+.bonsai-list-item .bonsai-img {
+  height: 280px;
+  width: 280px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px #555;
+
+  -webkit-transition: width 0.6s, height 0.6s;
+  transition: width 0.6s, height 0.6s;
+}
+
+.bonsai-list-item .bonsai-img:hover {
+  height: 290px;
+  width: 290px;
+}
+
+.bonsai-list-item .bonsai-img:hover img {
+  margin: 18px auto 0 auto;
+}
+
+.bonsai-list-item .bonsai-img img {
+  max-width: 270px;
+  height: 170px;
+  margin: 12px auto 0 auto;
+
+  -webkit-transition: margin 0.5s;
+  transition: margin 0.5s;
+}
+
+.bonsai-list-item .bonsai-name {
+  margin-top: 0px;
+  font-size: 200%;
+}
+
+.bonsai-list-item .bonsai-scientific-name {
+  margin-top: 0px;
+  font-size: 150%;
+  font-weight: lighter;
+  font-style: italic;
+}

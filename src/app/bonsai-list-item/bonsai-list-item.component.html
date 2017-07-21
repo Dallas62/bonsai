@@ -1,0 +1,10 @@
+
+<div class="content-block inset">
+  <div class="content-block-inner bonsai-list-item" (click)="goToBonsai()">
+    <div class="bonsai-img">
+      <img src="/assets/img/bonsais/{{ bonsai._id }}.jpg" />
+      <div class="bonsai-name">{{ (myBonsai) ? myBonsai.name : bonsai.name }}</div>
+      <div class="bonsai-scientific-name">{{ bonsai.scientific_name }}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+.content-block-not-found {
+  text-align: center;
+  font-size: 200%;
+  line-height: 120%;
+}
+
+.not-found-img {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 420px;
+}
+
+.not-found-text {
+  text-align: center;
+  font-size: 160%;
+}
+
+.card-not-found {
+  margin-bottom: 64px;
+}

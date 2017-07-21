@@ -1,0 +1,10 @@
+
+.list-block {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.list-block .content-block-title {
+  line-height: 110%;
+  font-size: 140%;
+}
